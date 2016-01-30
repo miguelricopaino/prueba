@@ -1,0 +1,20 @@
+
+###########################################################################
+###########1)First, you need to install  and load the followings Packages:############
+############################################################################
+
+install.packages(“caret”)
+
+library(caret)
+?read.csv
+
+#############2)lOADING DATA##############
+
+training <- read.csv("pml-training.csv", row.names = 1)
+testing <- read.csv("pml-testing.csv", row.names = 1)
+
+#########we take a look in the data####
+View(training)
+View(testing)
+summary(training)
+dim(training)
